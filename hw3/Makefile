@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CC = gcc
 FUSE_DIR = lib/fuse
 CFLAGS = -std=gnu99 -g -Wall -I $(FUSE_DIR)/include -D_FILE_OFFSET_BITS=64
@@ -46,3 +47,30 @@ reset_fs:
 	rm -rf .superblock
 
 .PHONY: all clean check fuse fuse_conf
+=======
+#
+# WARNING
+#
+# You should NOT edit this file, to change compiler flags, defines, etc.
+# The hw3 autograder will replace this Makefile with a fresh copy.
+#
+SRCS=mm_alloc.c mm_test.c
+EXECUTABLES=mm_test
+
+CC=gcc
+CFLAGS=-g -Wall
+LDFLAGS=
+
+OBJS=$(SRCS:.c=.o)
+
+all: $(EXECUTABLES)
+
+$(EXECUTABLES): $(OBJS)
+	$(CC) $(CFLAGS) $(OBJS) $(LDFLAGS) -o $@
+
+.c.o:
+	$(CC) $(CFLAGS) -c $< -o $@
+
+clean:
+	rm -rf $(EXECUTABLES) $(OBJS)
+>>>>>>> 68371345f2629ca6697c19e5e44d8bfcfb5faa05

@@ -22,7 +22,10 @@
 
 # Executables
 *.exe
+<<<<<<< HEAD
 *.out
+=======
+>>>>>>> 68371345f2629ca6697c19e5e44d8bfcfb5faa05
 *.app
 *.i*86
 *.x86_64
@@ -37,9 +40,12 @@
 hw0/main
 hw0/map
 hw0/wc
+<<<<<<< HEAD
 
 #HW1
 hw1/shell
 
 #HW2
 hw2/httpserver
+=======
+>>>>>>> 68371345f2629ca6697c19e5e44d8bfcfb5faa05
